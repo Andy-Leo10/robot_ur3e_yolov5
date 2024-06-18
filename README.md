@@ -1,6 +1,11 @@
 # robot_ur3e_yolov5
 
+# Motivation
+When working on a real environment it is difficult to tune parameters in a program based on digital image processing. For that reason, a good approach is to use a CNN.
+![alt text](assets/motivation.png)
+
 - [robot\_ur3e\_yolov5](#robot_ur3e_yolov5)
+- [Motivation](#motivation)
 - [trains](#trains)
   - [1. e=10](#1-e10)
   - [2. e=100](#2-e100)
@@ -18,17 +23,17 @@
 
 ## 1. e=10
 ```
-python train.py --img 424 --batch 16 --epochs 10 --data customdata.yaml --weights yolov5n.pt --cache
+python train.py --img 424 --batch 16 --epochs 10 --data customData.yaml --weights yolov5n.pt --cache
 ```
 
 ## 2. e=100
 ```
-python train.py --img 424 --batch 16 --epochs 100 --data customdata.yaml --weights yolov5n.pt --cache
+python train.py --img 424 --batch 16 --epochs 100 --data customData.yaml --weights yolov5n.pt --cache
 ```
 
 ## 3. e=300
 ```
-python train.py --img 424 --batch 16 --epochs 300 --data customdata.yaml --weights yolov5n.pt --cache
+python train.py --img 424 --batch 16 --epochs 300 --data customData.yaml --weights yolov5n.pt --cache
 ```
 
 ## 4. e=y
